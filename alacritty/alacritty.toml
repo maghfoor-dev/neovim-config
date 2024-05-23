@@ -44,7 +44,7 @@ normal = { family = "Noto Sans Mono", style = "Regular" }
 bold = { family = "Noto Sans Mono", style = "Bold" }
 italic = { family = "Noto Sans Mono", style = "Italic" }
 bold_italic = { family = "Noto Sans Mono", style = "Bold Italic" }
-#size                  = 11.25
+size = 20
 offset = { x = 0, y = 0 }
 glyph_offset = { x = 0, y = 0 }
 #builtin_box_drawing   = true
@@ -142,8 +142,8 @@ command = { program = "notify-send", args = ["alacritty", "bell"] }
 save_to_clipboard = true
 
 [cursor.style]
-shape = "Beam"
-blinking = "Always"
+shape = "Block"
+blinking = "Off"
 
 [cursor.vi_mode_style]
 shape = "Block"
