@@ -1,0 +1,36 @@
+general {
+    output_format = "i3bar"
+    colors = true
+    interval = 5
+}
+
+order += "volume master"
+order += "cpu_usage"
+order += "disk /"
+order += "load"
+order += "time"
+
+volume master {
+    format = "♪: %volume"
+    format_muted = "♪: muted"
+    device = "default"
+    mixer = "Master"
+    mixer_idx = 0
+}
+
+cpu_usage {
+    format = "CPU: %usage"
+}
+
+disk "/" {
+    format = "Disk: %avail"
+}
+
+load {
+    format = "Load: %1min"
+}
+
+time {
+    format = "%d-%m-%y %H:%M:%S"
+}
+
